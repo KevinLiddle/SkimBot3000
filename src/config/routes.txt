@@ -1,0 +1,6 @@
+///   place routes in here in the format listed below:
+///   /path/name/regex        -> PathHandlerName#callbackMethod
+///   and create a handler with given Handler name that inherits from Handler
+///   this handler should have a callback method to be performed for the given route
+
+/       -> HomeHandler#home
