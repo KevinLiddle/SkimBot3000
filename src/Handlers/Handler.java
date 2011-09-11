@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.StringReader;
 import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public abstract class Handler {
 
@@ -16,12 +19,14 @@ public abstract class Handler {
       String line = br.readLine();
       while(line != null){
         String[] route = line.split("\\s*->\\s*");
-        if(request.matches(route[0]))
+        if(!line.equals("\n") && !line.startsWith("///") && request.matches(route[0])){
           return callMethod(route[1], request);
+        }
         line = br.readLine();
       }
       return notFound();
     } catch(Exception e) {
+      e.printStackTrace();
       return error();
     }
   }
@@ -43,13 +48,18 @@ public abstract class Handler {
   }
 
   protected static synchronized BufferedReader renderFile(String location, String request) throws Exception {
-    String[] route = request.split("/");
-    request = route[route.length - 1];
-    return new BufferedReader(new FileReader(new File(viewsRoot + location + "/" + request)));
+    return new BufferedReader(new FileReader(new File(viewsRoot + location + request)));
   }
 
-  protected static synchronized int getID(String request) {
-    return Integer.parseInt(request.split("/")[1]);
+  protected static ArrayList<Integer> getIDs(String request) {
+    ArrayList<Integer> IDs = new ArrayList<Integer>();
+    Pattern ints = Pattern.compile("\\d+");
+    Matcher match = ints.matcher(request);
+    while(match.find()){
+      int id = Integer.parseInt(match.group());
+      IDs.add(id);
+    }
+    return IDs;
   }
 
   private static synchronized BufferedReader callMethod(String methodName, String request) throws Exception {

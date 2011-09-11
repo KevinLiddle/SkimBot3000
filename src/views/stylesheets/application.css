@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: #FFC54E;
+    font-family: "Geeza Pro";
+}
+
+h1 {
+    font-size: 8em;
+    color: #532482;
+}
+
+h2 {
+    font-size: 3em;
+    color: #532482;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+td {
+    text-align: center;
+}
+
+a {
+    font-size: 2em;
+    text-decoration: none;
+    color: #FFFFFF;
+}

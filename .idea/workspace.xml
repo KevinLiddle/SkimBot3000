@@ -59,19 +59,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/config/routes.txt">
+      <file leaf-file-name="application.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.07804371">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Handlers/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="40" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
+            <state line="7" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.109261185">
               <folding />
             </state>
           </provider>
@@ -84,16 +75,29 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/specs/HandlerSpecs/HandlerTestHelpers.java" />
+        <option value="$PROJECT_DIR$/src/Handlers/GUIHandler.java" />
+        <option value="$PROJECT_DIR$/src/views/DisappointedSkim.html" />
+        <option value="$PROJECT_DIR$/src/views/SatisfiedSkim.java" />
+        <option value="$PROJECT_DIR$/src/views/DisappointedSkim.java" />
         <option value="$PROJECT_DIR$/src/config/routes.txt" />
-        <option value="$PROJECT_DIR$/src/views/error.html" />
+        <option value="$PROJECT_DIR$/src/views/EndHTML.java" />
+        <option value="$PROJECT_DIR$/src/Handlers/QuestionHandler.java" />
+        <option value="$PROJECT_DIR$/src/specs/HandlerSpecs/QuestionHandlerSpec.java" />
+        <option value="$PROJECT_DIR$/src/views/javascripts/application.js" />
         <option value="$PROJECT_DIR$/src/views/home.html" />
-        <option value="$PROJECT_DIR$/src/Handlers/Handler.java" />
-        <option value="$PROJECT_DIR$/src/Handlers/HomeHandler.java" />
-        <option value="$PROJECT_DIR$/src/specs/HandlerSpecs/HomeHandlerSpec.java" />
+        <option value="$PROJECT_DIR$/src/views/Results.java" />
+        <option value="$PROJECT_DIR$/src/views/Disappointed.html" />
+        <option value="$PROJECT_DIR$/src/views/QuestionHTML.java" />
+        <option value="$PROJECT_DIR$/src/views/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/src/views/404NotFound.html" />
+        <option value="$PROJECT_DIR$/src/views/error.html" />
       </list>
     </option>
   </component>
@@ -127,8 +131,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,7 +182,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="specs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ModelSpecs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -216,6 +267,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SkimBot3000" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTTPServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,22 +330,32 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="DefaultHtmlFileTemplate" value="Html" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="models" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.SkimBot3000">
     <configuration default="false" name="HomeHandlerSpec.requestForHomePageReturnsBRForHomePage" type="JUnit" factoryName="JUnit" temporary="true">
@@ -402,7 +485,13 @@
       <envs />
       <dir value="$PROJECT_DIR$/src" />
       <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="62716" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -419,6 +508,7 @@
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="74944744-06ab-47fa-8ede-26ef97c0f9f0" name="Default" comment="" />
       <created>1315614616665</created>
       <updated>1315614616665</updated>
     </task>
@@ -428,23 +518,23 @@
     <frame x="0" y="22" width="1920" height="1108" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2804487" sideWeight="0.67070705" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16025642" sideWeight="0.72727275" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27272728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -494,67 +584,108 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/HandlerTestHelpers.java">
+    <entry file="file://$PROJECT_DIR$/src/HTTPServer/SocketCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="88" selection-end="88" vertical-scroll-proportion="0.062434964">
-          <folding />
-        </state>
+        <state line="23" column="0" selection-start="726" selection-end="726" vertical-scroll-proportion="0.29656607" />
       </provider>
     </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/lang/ClassLoader.class">
+    <entry file="file://$PROJECT_DIR$/src/Handlers/GUIHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="0" selection-start="9625" selection-end="9625" vertical-scroll-proportion="0.8553055">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/error.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="7" selection-start="277" selection-end="277" vertical-scroll-proportion="0.24549918">
-          <folding />
-        </state>
+        <state line="14" column="85" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Handlers/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="40" selection-start="1410" selection-end="1410" vertical-scroll-proportion="0.0">
+        <state line="67" column="67" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.8439126" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/HandlerTestHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="155" selection-end="155" vertical-scroll-proportion="0.062434964">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Handlers/HomeHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/views/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+        <state line="2" column="78" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handlers/QuestionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="40" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.31217483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/QuestionHandlerSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="584" selection-end="584" vertical-scroll-proportion="0.31217483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/config/routes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="47" selection-start="625" selection-end="625" vertical-scroll-proportion="0.17169616">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HTTPServer/ApplicationResponder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="80" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Results.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="78" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="25" selection-start="197" selection-end="197" vertical-scroll-proportion="0.112059765">
+        <state line="7" column="25" selection-start="197" selection-end="197" vertical-scroll-proportion="-4.375">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/HomeHandlerSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/views/404NotFound.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="7" column="49" selection-start="362" selection-end="362" vertical-scroll-proportion="0.15742129">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/routes.txt">
+    <entry file="file://$PROJECT_DIR$/src/views/Disappointed.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="310" selection-end="310" vertical-scroll-proportion="0.07804371">
+        <state line="7" column="69" selection-start="355" selection-end="355" vertical-scroll-proportion="0.15742129">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="7" selection-start="357" selection-end="357" vertical-scroll-proportion="0.17609392">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/QuestionHTML.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="43" selection-start="782" selection-end="782" vertical-scroll-proportion="0.31217483">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="19" selection-start="119" selection-end="119" vertical-scroll-proportion="0.109261185">
           <folding />
         </state>
       </provider>

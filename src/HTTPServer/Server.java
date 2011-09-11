@@ -15,6 +15,7 @@ public class Server implements Runnable {
   private LinkedList<Thread> threads = new LinkedList<Thread>();
 
   public static void main(String args[]) throws Exception {
+    Seeds.seed();
     SocketCommunication client = new SocketCommunication(new ApplicationResponder());
     Server server = new Server(3000, client);
     server.start();
