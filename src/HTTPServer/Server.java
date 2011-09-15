@@ -3,25 +3,22 @@ package HTTPServer;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.SocketException;
-import java.util.LinkedList;
+import java.util.Vector;
 
 public class Server implements Runnable {
 
   public ServerSocket serverSocket;
-  private int connections = 0;
   private ConnectionServer connectionServer;
-  private boolean running = false;
-  private LinkedList<Thread> threads = new LinkedList<Thread>();
+  private Vector<Thread> threads = new Vector<Thread>();
 
-  public static void main(String args[]) throws Exception {
+  public static void main(String args[]) {
     Seeds.seed();
-    SocketCommunication client = new SocketCommunication(new ApplicationResponder());
+    SocketCommunication client = new SocketCommunication();
     Server server = new Server(3000, client);
     server.start();
   }
 
-  public Server(int _port, ConnectionServer connectionServer) throws Exception {
+  public Server(int _port, ConnectionServer connectionServer) {
     this.connectionServer = connectionServer;
     try {
       serverSocket = new ServerSocket(_port);
@@ -31,50 +28,46 @@ public class Server implements Runnable {
     }
   }
 
-  public void closeServerSocket() {
-    try {
-      running = false;
-      serverSocket.close();
-    } catch (IOException e) {
-      System.out.println("Could not close connection to port: " + serverSocket.getLocalPort());
-    }
-  }
-
   public void start() {
     new Thread(this).start();
+    System.out.println("Server started on port 3000\n");
   }
 
   public void run() {
-    try {
-      running = true;
-      while (running) {
+    while (true) {
+      try {
         Socket clientSocket = serverSocket.accept();
         serveConnection(clientSocket);
-        connections++;
+      } catch (IOException e) {
+        System.out.println("Could not connect to server.");
+        e.printStackTrace();
       }
-    } catch (SocketException e) {
-      waitForClose();
-    } catch (Exception e) {
-      System.out.println("Could not connect to server.");
-      System.exit(-1);
     }
   }
 
   private void serveConnection(Socket clientSocket) {
-    threads.add(new Thread(new ConnectionServerDriver(clientSocket)));
-    threads.getLast().start();
+    Thread thread = startThread(clientSocket);
+    System.out.println(threads.size() + ": Client connected to server\n");
+    killThread(thread);
   }
 
-  private void waitForClose() {
-    try {
-      Thread.sleep(10); // let close finish
-    } catch (InterruptedException e1) {
-      System.out.println("Thread cannot sleep.");
-    }
+  private synchronized Thread startThread(Socket clientSocket) {
+    Thread thread = new Thread(new ConnectionServerDriver(clientSocket));
+    threads.add(thread);
+    thread.start();
+    return thread;
   }
 
-  public int getConnectionCount() {
-    return connections;
+  private synchronized void killThread(Thread thread) {
+    threads.remove(thread);
+    thread.interrupt();
+    thread = null;
+  }
+
+  private synchronized void killLastThread() {
+    System.out.println(threads.size() + " threads");
+//    threads.remove().interrupt();
+    System.out.println(threads.size() + " threads");
   }
 
   private class ConnectionServerDriver implements Runnable {
@@ -83,14 +76,25 @@ public class Server implements Runnable {
     public ConnectionServerDriver(Socket clientSocket) {
       this.clientSocket = clientSocket;
     }
+
     public void run() {
+      serve();
+      close();
+    }
+
+    private synchronized void serve() {
       try {
         connectionServer.serve(clientSocket);
+      } catch(IOException ioe) {
+        System.out.println("IOException when writing/reading client connection");
+      }
+    }
+
+    private synchronized void close() {
+      try {
         connectionServer.close(clientSocket);
-      } catch (Exception e) {
-        Thread lastThread = threads.removeLast();
-        lastThread = null;
-        e.printStackTrace();
+      } catch (IOException ioe) {
+        System.out.println("IOException when closing client connection");
       }
     }
   }

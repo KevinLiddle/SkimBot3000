@@ -16,7 +16,7 @@ public class Results {
       "</head>\n" +
       "<body>\n";
     if(correct){
-      html += "<img src=\"http://dl.dropbox.com/u/16607608/Skim_yes.png\" alt=\"Ugh...\" />\n" +
+      html += "<img src=\"http://dl.dropbox.com/u/16607608/Skim_yes.png\" alt=\"Yessss\" />\n" +
       "<h2>Skim is satisfied.</h2>\n" +
       "<div id=\"yes\"></div>\n";
     } else {
