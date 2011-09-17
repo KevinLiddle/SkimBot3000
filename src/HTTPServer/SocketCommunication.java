@@ -11,11 +11,10 @@ public class SocketCommunication implements ConnectionServer {
   public final String NOT_FOUND = "404 Not Found";
   public final String ERROR = "500 Internal Server Error";
 
-  public synchronized void serve(Socket connection) throws IOException {
+  public void serve(Socket connection) throws IOException {
     DataOutputStream os = new DataOutputStream(connection.getOutputStream());
     String[] request = request(connection.getInputStream());
-    System.out.println("***********" + (request[0] == null));
-    if(request[0] != null) {
+    if(!request[0].isEmpty()) {
       System.out.println(request[0] + " request for \"" + request[1] + "\" of type " + contentType(request[1]));
       String output = "HTTP/1.0 " + status(request[1]) + "\n" +
                     "Content-Type: "+ contentType(request[1]) +"\n\n";
@@ -25,11 +24,11 @@ public class SocketCommunication implements ConnectionServer {
     }
   }
 
-  public synchronized void close(Socket connection) throws IOException {
+  public void close(Socket connection) throws IOException {
     connection.close();
   }
 
-  private synchronized String contentType(String URI) {
+  private String contentType(String URI) {
     if(URI.endsWith(".css"))
       return "text/css";
     else if(URI.endsWith(".js"))
@@ -38,7 +37,7 @@ public class SocketCommunication implements ConnectionServer {
       return "text/html";
   }
 
-  private synchronized String status(String URI){
+  private String status(String URI){
     try{
       BufferedReader br = new BufferedReader(new FileReader(new File("src/config/routes.txt")));
       String line = br.readLine();
@@ -54,8 +53,8 @@ public class SocketCommunication implements ConnectionServer {
     }
   }
 
-  private synchronized String[] request(InputStream inputStream) {
-    String[] requestElements = new String[3];
+  private String[] request(InputStream inputStream) {
+    String[] requestElements = {"", "", ""};
     try {
       BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
       String line = br.readLine();
@@ -67,7 +66,7 @@ public class SocketCommunication implements ConnectionServer {
     return requestElements;
   }
 
-  private synchronized String serverResponse(String[] request) {
+  private String serverResponse(String[] request) {
     BufferedReader content = Handler.execute(request[1]);
     String output = "";
     try {

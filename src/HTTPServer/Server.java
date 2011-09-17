@@ -51,23 +51,17 @@ public class Server implements Runnable {
     killThread(thread);
   }
 
-  private synchronized Thread startThread(Socket clientSocket) {
+  private Thread startThread(Socket clientSocket) {
     Thread thread = new Thread(new ConnectionServerDriver(clientSocket));
     threads.add(thread);
     thread.start();
     return thread;
   }
 
-  private synchronized void killThread(Thread thread) {
+  private void killThread(Thread thread) {
     threads.remove(thread);
     thread.interrupt();
     thread = null;
-  }
-
-  private synchronized void killLastThread() {
-    System.out.println(threads.size() + " threads");
-//    threads.remove().interrupt();
-    System.out.println(threads.size() + " threads");
   }
 
   private class ConnectionServerDriver implements Runnable {
