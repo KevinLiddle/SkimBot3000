@@ -62,36 +62,7 @@
       <file leaf-file-name="Server.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HTTPServer/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="0" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.62539023">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketCommunication.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HTTPServer/SocketCommunication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Handler.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Handlers/Handler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="8" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config/routes.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="14" column="18" selection-start="340" selection-end="340" vertical-scroll-proportion="-1.017341">
               <folding />
             </state>
           </provider>
@@ -111,22 +82,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/views/404NotFound.html" />
-        <option value="$PROJECT_DIR$/src/views/error.html" />
-        <option value="$PROJECT_DIR$/src/HTTPServer/ApplicationResponder.java" />
-        <option value="$PROJECT_DIR$/src/HTTPServer/ConnectionServer.java" />
-        <option value="$PROJECT_DIR$/src/config/routes.txt" />
-        <option value="$PROJECT_DIR$/src/views/Results.java" />
-        <option value="$PROJECT_DIR$/src/HTTPServer/Seeds.java" />
-        <option value="$PROJECT_DIR$/src/Handlers/GUIHandler.java" />
+        <option value="$PROJECT_DIR$/src/specs/HTTPServer/LoggingTest.java" />
+        <option value="$PROJECT_DIR$/src/HTTPServer/Logger.java" />
+        <option value="$PROJECT_DIR$/src/HTTPServer/Logger/SOLogger.java" />
+        <option value="$PROJECT_DIR$/src/specs/HTTPServer/LoggerTest.java" />
+        <option value="$PROJECT_DIR$/src/HTTPServer/Logger/MemLogger.java" />
+        <option value="$PROJECT_DIR$/src/specs/HTTPServer/ServerTest.java" />
+        <option value="$PROJECT_DIR$/src/specs/HTTPServer/SocketCommunicationTest.java" />
         <option value="$PROJECT_DIR$/src/Handlers/HomeHandler.java" />
         <option value="$PROJECT_DIR$/src/Handlers/QuestionHandler.java" />
-        <option value="$PROJECT_DIR$/src/specs/HandlerSpecs/HomeHandlerSpec.java" />
-        <option value="$PROJECT_DIR$/src/specs/HandlerSpecs/HandlerTestHelpers.java" />
-        <option value="$PROJECT_DIR$/src/Handlers/Handler.java" />
         <option value="$PROJECT_DIR$/src/HTTPServer/SocketCommunication.java" />
+        <option value="$PROJECT_DIR$/src/specs/Handlers/QuestionHandlerSpec.java" />
+        <option value="$PROJECT_DIR$/src/specs/Handlers/HomeHandlerSpec.java" />
+        <option value="$PROJECT_DIR$/src/Handlers/GUIHandler.java" />
+        <option value="$PROJECT_DIR$/src/Handlers/Handler.java" />
+        <option value="$PROJECT_DIR$/src/specs/Handlers/HandlerLoggerTest.java" />
         <option value="$PROJECT_DIR$/src/HTTPServer/Server.java" />
-        <option value="$PROJECT_DIR$/src/views/home.html" />
       </list>
     </option>
   </component>
@@ -160,6 +131,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -192,10 +165,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -211,11 +180,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="specs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -237,7 +202,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ModelSpecs" />
+              <option name="myItemId" value="HTTPServer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,25 +224,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="HandlerSpecs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkimBot3000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkimBot3000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="Handlers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,32 +264,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkimBot3000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SkimBot3000" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -360,6 +287,9 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/specs" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="models" />
     </key>
@@ -369,10 +299,76 @@
       <module name="SkimBot3000" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="specs.HandlerSpecs" />
-      <option name="MAIN_CLASS_NAME" value="specs.HandlerSpecs.HomeHandlerSpec" />
+      <option name="PACKAGE_NAME" value="specs.Handlers" />
+      <option name="MAIN_CLASS_NAME" value="specs.Handlers.HomeHandlerSpec" />
       <option name="METHOD_NAME" value="requestForHomePageReturnsBRForHomePage" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="SocketCommunicationTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SkimBot3000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="specs.HTTPServer" />
+      <option name="MAIN_CLASS_NAME" value="specs.HTTPServer.SocketCommunicationTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="LoggerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SkimBot3000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="specs.HTTPServer" />
+      <option name="MAIN_CLASS_NAME" value="specs.HTTPServer.LoggerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ServerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="SkimBot3000" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="specs.HTTPServer" />
+      <option name="MAIN_CLASS_NAME" value="specs.HTTPServer.ServerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -502,10 +498,13 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.SkimBot3000" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.All Tests" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.HomeHandlerSpec.requestForHomePageReturnsBRForHomePage" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SocketCommunicationTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoggingTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ServerTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -523,7 +522,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1920" height="1108" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -533,9 +532,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17574786" sideWeight="0.7282828" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18429486" sideWeight="0.7282828" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27171716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27171716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -591,106 +590,122 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/util/PriorityQueue.class">
+    <entry file="file://$PROJECT_DIR$/src/HTTPServer/Logger/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="0" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.8699422" />
-      </provider>
-    </entry>
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar!/java/util/concurrent/PriorityBlockingQueue.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="2729" selection-end="2729" vertical-scroll-proportion="0.8699422" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Results.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1272" selection-end="1272" vertical-scroll-proportion="0.7586705" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HTTPServer/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0867052" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HTTPServer/Seeds.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="240" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.33136967" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Handlers/GUIHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="66" selection-start="411" selection-end="411" vertical-scroll-proportion="0.21852237">
+        <state line="4" column="34" selection-start="89" selection-end="89" vertical-scroll-proportion="0.062434964">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Handlers/HomeHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/HTTPServer/Logger/SOLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="51" selection-start="146" selection-end="146" vertical-scroll-proportion="0.09365244">
+        <state line="5" column="30" selection-start="137" selection-end="137" vertical-scroll-proportion="0.07804371">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Handlers/QuestionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/specs/HTTPServer/SocketCommunicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="852" selection-end="852" vertical-scroll-proportion="0.29656607">
+        <state line="57" column="3" selection-start="1558" selection-end="1558" vertical-scroll-proportion="0.7817919">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Question.java">
+    <entry file="file://$PROJECT_DIR$/src/HTTPServer/Logger/MemLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="30" selection-end="30" vertical-scroll-proportion="0.031217482">
+        <state line="7" column="8" selection-start="144" selection-end="144" vertical-scroll-proportion="0.1517341">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/HandlerTestHelpers.java">
+    <entry file="file://$PROJECT_DIR$/src/specs/HTTPServer/ServerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="68" selection-start="637" selection-end="637" vertical-scroll-proportion="0.31217483">
+        <state line="75" column="43" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.9833507">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/specs/HandlerSpecs/HomeHandlerSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/specs/HTTPServer/LoggerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="347" selection-end="347" vertical-scroll-proportion="0.12486993">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Handlers/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="8" selection-start="362" selection-end="362" vertical-scroll-proportion="0.0">
+        <state line="15" column="3" selection-start="392" selection-end="392" vertical-scroll-proportion="0.23413111">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/config/routes.txt">
+    <entry file="file://$PROJECT_DIR$/src/specs/Handlers/QuestionHandlerSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="50" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="60" column="21" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.7960458">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/Handlers/HandlerTestHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="7" selection-start="32" selection-end="32" vertical-scroll-proportion="0.031217482">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/Handlers/HomeHandlerSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="373" selection-end="373" vertical-scroll-proportion="0.23413111">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handlers/HomeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="8" selection-start="103" selection-end="103" vertical-scroll-proportion="0.1300578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handlers/QuestionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="555" selection-end="555" vertical-scroll-proportion="0.2817919">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handlers/GUIHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="30" selection-start="388" selection-end="388" vertical-scroll-proportion="0.23413111">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/specs/Handlers/HandlerLoggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="3" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.54630595">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Handlers/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="17" selection-start="2815" selection-end="2815" vertical-scroll-proportion="1.264308">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HTTPServer/SocketCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.16008538">
+        <state line="17" column="33" selection-start="460" selection-end="460" vertical-scroll-proportion="-0.32674298">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HTTPServer/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="0" selection-start="1976" selection-end="1976" vertical-scroll-proportion="0.62539023">
+        <state line="14" column="18" selection-start="340" selection-end="340" vertical-scroll-proportion="-1.017341">
           <folding />
         </state>
       </provider>
@@ -740,6 +755,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

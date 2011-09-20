@@ -1,6 +1,6 @@
 package views;
 
-import models.Question;
+import Models.Question;
 
 public class QuestionHTML {
 

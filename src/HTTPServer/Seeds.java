@@ -1,6 +1,6 @@
 package HTTPServer;
 
-import models.Question;
+import Models.Question;
 
 public class Seeds {
 

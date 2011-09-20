@@ -1,5 +1,7 @@
 package HTTPServer;
 
+import HTTPServer.Logger.Logger;
+import HTTPServer.Logger.SOLogger;
 import Handlers.Handler;
 
 import java.io.*;
@@ -7,20 +9,29 @@ import java.net.Socket;
 
 public class SocketCommunication implements ConnectionServer {
 
+  public Logger logger;
   public final String OK = "200 OK";
   public final String NOT_FOUND = "404 Not Found";
   public final String ERROR = "500 Internal Server Error";
+
+  public SocketCommunication() {
+    this.logger = new SOLogger();
+  }
+
+  public SocketCommunication(Logger _logger) {
+    this.logger = _logger;
+  }
 
   public void serve(Socket connection) throws IOException {
     DataOutputStream os = new DataOutputStream(connection.getOutputStream());
     String[] request = request(connection.getInputStream());
     if(!request[0].isEmpty()) {
-      System.out.println(request[0] + " request for \"" + request[1] + "\" of type " + contentType(request[1]));
+      logger.log(request[0] + " request for \"" + request[1] + "\" of type " + contentType(request[1]) + "\n" +
+                  "application responds with status " + status(request[1]) + "\n");
       String output = "HTTP/1.0 " + status(request[1]) + "\n" +
                     "Content-Type: "+ contentType(request[1]) +"\n\n";
       output += serverResponse(request);
       os.writeBytes(output);
-      System.out.println("application responds with status " + status(request[1]) + "\n");
     }
   }
 
@@ -61,13 +72,14 @@ public class SocketCommunication implements ConnectionServer {
       if(line != null)
         requestElements = line.split(" ");
     } catch (IOException ioe) {
-      System.out.println("IOException when reading the request.");
+      logger.log("ERROR!! IOException when reading the request.");
     }
     return requestElements;
   }
 
   private String serverResponse(String[] request) {
-    BufferedReader content = Handler.execute(request[1]);
+    Handler handler = new Handler();
+    BufferedReader content = handler.execute(request[1]);
     String output = "";
     try {
       String line = content.readLine();
@@ -76,7 +88,7 @@ public class SocketCommunication implements ConnectionServer {
         line = content.readLine();
       }
     } catch (IOException ioe) {
-      System.out.println("IOException when reading output.");
+      logger.log("ERROR!! IOException when reading output.");
     }
     return output;
   }

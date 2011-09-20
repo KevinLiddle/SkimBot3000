@@ -1,6 +1,6 @@
-package specs.ModelSpecs;
+package specs.Models;
 
-import models.Question;
+import Models.Question;
 import org.junit.Before;
 import org.junit.Test;
 
