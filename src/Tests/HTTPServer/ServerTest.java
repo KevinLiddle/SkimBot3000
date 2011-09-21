@@ -1,4 +1,4 @@
-package specs.HTTPServer;
+package Tests.HTTPServer;
 
 import HTTPServer.ConnectionServer;
 import HTTPServer.Logger.MemLogger;

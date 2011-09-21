@@ -1,4 +1,4 @@
-package specs.Handlers;
+package Tests.Handlers;
 
 import HTTPServer.Database;
 import HTTPServer.Logger.MemLogger;
@@ -9,9 +9,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.Assert.assertTrue;
-import static specs.Handlers.HandlerTestHelpers.*;
+import static Tests.Handlers.HandlerTestHelpers.*;
 
-public class QuestionHandlerSpec {
+public class QuestionHandlerTest {
 
   Handler handler;
 

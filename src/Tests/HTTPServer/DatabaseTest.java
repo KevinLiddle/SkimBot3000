@@ -1,4 +1,4 @@
-package specs.HTTPServer;
+package Tests.HTTPServer;
 
 import HTTPServer.Database;
 import org.junit.After;

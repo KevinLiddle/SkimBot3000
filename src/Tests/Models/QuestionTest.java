@@ -1,4 +1,4 @@
-package specs.Models;
+package Tests.Models;
 
 import Models.Question;
 import org.junit.Before;
@@ -8,7 +8,7 @@ import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertFalse;
 import static junit.framework.Assert.assertTrue;
 
-public class QuestionSpec {
+public class QuestionTest {
 
   String prompt;
   String[] responses = new String[4];

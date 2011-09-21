@@ -59,6 +59,10 @@ public class Handler {
       return new BufferedReader(new FileReader(new File(viewsRoot + location)));
     } catch(FileNotFoundException fne) {
       logger.log("ERROR!! Cannot find \"" + viewsRoot + location + "/\"");
+      if(location.equals("error.html")){
+        logger.log("WHY DID YOU DELETE THE ERROR PAGE?!?!?!");
+        return null;
+      }
       return error();
     }
   }

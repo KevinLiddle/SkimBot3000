@@ -1,4 +1,4 @@
-package specs.Handlers;
+package Tests.Handlers;
 
 import HTTPServer.Logger.MemLogger;
 import Handlers.Handler;

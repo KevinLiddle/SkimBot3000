@@ -1,13 +1,13 @@
-package specs.Handlers;
+package Tests.Handlers;
 
 import HTTPServer.Logger.MemLogger;
 import Handlers.Handler;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
-import static specs.Handlers.HandlerTestHelpers.page;
+import static Tests.Handlers.HandlerTestHelpers.page;
 
-public class HomeHandlerSpec {
+public class HomeHandlerTest {
 
   Handler handler = new Handler(new MemLogger());
 
